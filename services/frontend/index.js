@@ -85,7 +85,7 @@ document.getElementById('consultar-livro').addEventListener('click', function ()
 
     })
     .catch((err) => {
-        swal('Erro', 'Erro ao buscar livro', 'error');
+        swal('Erro', 'Livro não encontrado :(', 'error');
         console.error(err);
     });
 });
