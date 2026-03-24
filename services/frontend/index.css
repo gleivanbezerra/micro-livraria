@@ -72,3 +72,68 @@ body {
         min-height: 250px;
     }
 }
+
+.book-search {
+    max-width: 700px;
+    margin: 1.5rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.book-input {
+    flex: 1;
+    min-width: 260px;
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #d8e1e3;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 15px;
+    color: #363636;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.book-input:focus {
+    border-color: #209cee;
+    box-shadow: 0 0 0 3px rgba(32, 156, 238, 0.15);
+}
+
+.book-button {
+    height: 44px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 6px;
+    background: #209cee;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.book-button:hover {
+    background: #1496ed;
+    transform: translateY(-1px);
+}
+
+.book-button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .book-search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .book-button,
+    .book-input {
+        width: 100%;
+    }
+}
